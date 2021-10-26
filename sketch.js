@@ -53,6 +53,7 @@ function Particle(x, y, m) {
   }
   
   this.display = function() {
+    noStroke();
     fill(255, 150);
     ellipse(this.pos.x, this.pos.y, this.mass*10, this.mass*10);
   }
